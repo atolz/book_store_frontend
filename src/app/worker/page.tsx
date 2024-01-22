@@ -42,10 +42,10 @@ const ServciceWorkerPage = () => {
         Subscribe
       </button>
       <div className=" min-w-0 break-words  text-wrap overflow-hidden">
-        {/* Subscripbiont is::{JSON.stringify(sub)} */}
-        <div className="">Endpoint: {sub?.endpoint}</div>
+        Subscripbiont is::{JSON.stringify(sub)}
+        {/* <div className="">Endpoint: {sub?.endpoint}</div>
         <div>p256dh: {sub?.keys?.p256dh}</div>
-        <div>auth: {sub?.keys?.auth}</div>
+        <div>auth: {sub?.keys?.auth}</div> */}
       </div>
       <button
         onClick={() => {
