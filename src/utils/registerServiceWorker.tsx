@@ -14,8 +14,8 @@ export const registerServiceWorker = async () => {
           console.log("permisiion",p)
         })
         registration.showNotification('test message')
-       const sub =   await registration.pushManager.subscribe({userVisibleOnly:true, applicationServerKey:'BOJfK4gnC4ap_tTcdrAEvS_4TWivJE65-ZfJK0EpjIHEUiv8DsUv4atrQeyxoZpBQfsOLkjx7FyCRUiVbpK2H-c'});
-       console.log("subscription is", sub)
+      //  const sub =   await registration.pushManager.subscribe({userVisibleOnly:true, applicationServerKey:'BOJfK4gnC4ap_tTcdrAEvS_4TWivJE65-ZfJK0EpjIHEUiv8DsUv4atrQeyxoZpBQfsOLkjx7FyCRUiVbpK2H-c'});
+      //  console.log("subscription is", sub)
       }
     } catch (error) {
       console.error(`Registration failed with ${error}`);
