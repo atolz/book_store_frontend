@@ -9,6 +9,7 @@ self.addEventListener("activate", (e) => {
 self.addEventListener("push", (e) => {
   console.log("push event is", e.data);
   self.registration.showNotification("Books store push notification", { body: e.data.text(), requireInteraction: true });
+  navigator.serviceWorker?.getRegistration()?.showNotification("TImer Servuce WORKER", { body: "This is the body" });
 });
 
 setInterval(() => {
